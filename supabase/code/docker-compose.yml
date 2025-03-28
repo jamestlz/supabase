@@ -276,7 +276,6 @@ services:
   functions:
     image: supabase/edge-runtime:v1.65.3
     restart: unless-stopped
-    depends_on:
     environment:
       JWT_SECRET: ${JWT_SECRET}
       SUPABASE_URL: http://kong:8000
